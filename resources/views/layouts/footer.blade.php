@@ -1,63 +1,51 @@
-{{-- <footer class="bg-[#F8FAFC] text-[#013370] border-t border-gray-200 mt-10 shadow-sm absolute bottom-0 w-full">
-    <div class="w-full max-w-screen-xl p-4 py-6 mx-auto lg:py-8">
-        <div class="md:flex md:justify-between">
-            <a href="{{ route('app.index') }}"
-                class="flex items-center space-x-3 transition-all duration-300 rtl:space-x-reverse hover:scale-110">
-                <img src="{{ asset('asset/images/logo.png') }}" class="w-[5rem]" alt="Flowbite Logo">
-                <h2 class="text-2xl font-extrabold text-[#013370]">SmartEdu</h2>
-            </a>
-            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-                <div>
-                    <h2 class="mb-6 text-lg font-bold uppercase text-[#013370]">Pages</h2>
-                    <ul class="flex flex-col gap-4">
-                        <li>
-                            <a href="{{ route('app.index') }}"
-                                class="transition-all duration-300 hover:scale-105">Home</a>
-                        </li>
-                        <li>
-                            <a href="https://tailwindcss.com/"
-                                class="transition-all duration-300 hover:scale-105">About</a>
-                        </li>
-                        <li>
-                            <a href="https://tailwindcss.com/"
-                                class="transition-all duration-300 hover:scale-105">Services</a>
-                        </li>
-                        <li>
-                            <a href="https://tailwindcss.com/"
-                                class="transition-all duration-300 hover:scale-105">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 class="mb-6 text-lg font-bold uppercase text-[#013370]">Follow us</h2>
-                    <ul class="text-gray-600">
-                        <li class="mb-4">
-                            <a href="#" class="hover:text-[#013370] hover:scale-105 transition-all">Instagram</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hover:text-[#013370] hover:scale-105 transition-all">Facebook</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 class="mb-6 text-lg font-bold uppercase text-[#013370]">Legal</h2>
-                    <ul class="text-gray-600">
-                        <li class="mb-4">
-                            <a href="#" class="hover:text-[#013370] hover:scale-105 transition-all">Privacy
-                                Policy</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hover:text-[#013370] hover:scale-105 transition-all">Terms &
-                                Conditions</a>
-                        </li>
-                    </ul>
+<footer class="bg-[#013370] text-white">
+    <div class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="col-span-1 md:col-span-2">
+                <a href="{{ route('app.home') }}" class="flex items-center mb-4">
+                    <img src="{{ asset('asset/images/logo.png') }}" alt="Logo" class="h-8 w-auto mr-3">
+                    <h2 class="text-2xl font-bold">SmartEdu</h2>
+                </a>
+                <p class="text-gray-300 mb-4">
+                    Empowering students with cutting-edge IT education and practical skills for the digital workforce.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                        <i class="fab fa-instagram"></i>
+                    </a>
                 </div>
             </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="{{ route('app.home') }}" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+                    <li><a href="{{ route('app.about') }}" class="text-gray-300 hover:text-white transition-colors">About</a></li>
+                    <li><a href="{{ route('app.courses') }}" class="text-gray-300 hover:text-white transition-colors">Specializations</a></li>
+                    <li><a href="{{ route('app.contact') }}" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                <ul class="space-y-2 text-gray-300">
+                    <li>123 University Avenue</li>
+                    <li>Education District</li>
+                    <li>City, State 12345</li>
+                    <li>Phone: +1 (555) 123-4567</li>
+                    <li>Email: info@university.edu</li>
+                </ul>
+            </div>
         </div>
-        <hr class="my-6 border-gray-200 sm:mx-auto" />
-        <div class="sm:flex sm:items-center sm:justify-between">
-            <span class="text-sm text-gray-500">© 2025 <a href="#"
-                    class="hover:underline text-[#013370]">SmartEdu™</a>. All Rights Reserved.</span>
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+            <p>&copy; 2024 SmartEdu. All rights reserved.</p>
         </div>
     </div>
-</footer> --}}
+</footer>
