@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Classe;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -20,7 +21,8 @@ class StudentFactory extends Factory
         return [
             'registred_date' => fake()->date(),
             'abssence_reason' => fake()->paragraph(),
-            'user_id' => User::inRandomOrder()->first()->id
+            'user_id' => User::inRandomOrder()->first()->id,
+            'classe_id' => Classe::inRandomOrder()->first()->id
         ];
     }
 }

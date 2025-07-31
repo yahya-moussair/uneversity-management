@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('exam_answers', function (Blueprint $table) {
             $table->id();
             $table->string('answer_option');
+            $table->foreignId('examQuestion_id')->constrained('exam_questions')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
     }

@@ -14,6 +14,8 @@ return new class extends Migration
         Schema::create('enrollments', function (Blueprint $table) {
             $table->id();
             $table->date('enroll_date');
+            $table ->foreignId('student_id')->constrained('students')->onDelete('cascade')->onUpdate('cascade');
+            $table ->foreignId('specialization_id')->constrained('specializations')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
     }

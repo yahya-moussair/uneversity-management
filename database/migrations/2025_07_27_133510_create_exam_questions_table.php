@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('prompt');
             $table->string('choices');
+            $table->foreignId('exam_id')->constrained('exams')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
     }

@@ -2,10 +2,12 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Teacher extends Model
 {
+    use HasFactory;
     protected $fillable=[
         'full_name',
         'speciality',
@@ -13,4 +15,10 @@ class Teacher extends Model
         'email',
         'password',
     ];
+    public function specialization(){
+        return $this->belongsTo(Specialization::class);
+    }
+    public function classe () {
+        return $this->hasOne(Classe::class);
+    }
 }

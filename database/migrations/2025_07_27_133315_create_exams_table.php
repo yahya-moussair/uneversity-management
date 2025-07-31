@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('type_exam');
-            $table->string('date_exam');
+            $table->date('date_exam');
             $table->timestamps();
         });
     }

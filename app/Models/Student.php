@@ -15,4 +15,10 @@ class Student extends Model
     public function user(){
         return $this->belongsTo(User::class);
     }
+    public function classe(){
+        return $this->belongsTo(Classe::class);
+    }
+    public function specializations(){
+        return $this->belongsToMany(Specialization::class , 'enrollments');
+    }
 }
